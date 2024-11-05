@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"League Spartan", sans-serif;
+}
+
+h1{
+    font-size: 46px;
+}
+h2{
+    font-size: 30px;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(231, 233, 238);
+    padding: 0 30px;
+    box-shadow: 2px 3px 3px rgb(171, 169, 169);
+    position: sticky;
+    top: 0;
+    border-bottom-right-radius: 5px;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+#navbar li{
+    list-style-type: none;
+    padding: 0 2rem;
+    font-weight: 800;
+    font-size: 1rem;
+    
+   
+}
+
+#navbar li a{
+    text-decoration: none; 
+    position: relative;
+    color: black;
+   
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(14, 191, 185);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+#navbar li a.active {
+    color: rgb(14, 191, 185); /* Highlight the active link */
+}
+
+.background{
+    height: 90vh;
+    width: 100%;
+    background-image: url('./img/front-view-books-with-white-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+    padding:100px 100px;
+    
+}
+.background h1{
+    color: rgba(4, 95, 111, 0.95);
+    padding-top: 20px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgba(83, 79, 79, 0.233);
+    position: static;
+}
+
+.background h2{
+    color: rgba(82, 4, 6, 0.95);
+    padding-top: 20px; 
+    font-weight: 900; 
+    text-shadow: 2px 2px 2px rgba(83, 79, 79, 0.233);
+}
+
+.background p{
+    color: rgba(7, 7, 7, 0.95);
+    padding-top: 20px; 
+    font-size: 20px; 
+    font-weight: 500;
+}
+.background div button{
+    padding: 60px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    background-image: url('paint_strok2-removebg.png');
+    backdrop-filter: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: 900; 
+}
+
+.background div button:hover{
+    transition-duration: 1s;
+    transition: linear 0.2 ease;
+    transform: scale(1.2)
+    
+}
+
+
+
+#products1{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#products{
+    margin-top: 20px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#product{
+    width: 20%;
+    box-shadow: 2px 2px 20px rgb(209, 203, 203);
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+#product #imgs{
+    width: 100%;
+}
+
+#product img{
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+}
+
+#product #info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 30px;
+    position: relative;
+}
+
+#product #info h3{
+   padding-bottom: 10px;
+}
+
+#product #info h2{
+    padding-bottom: 10px;
+    color: green;
+}
+
+#product #info #star{
+    padding-bottom: 20px;
+    color: goldenrod;
+}
+
+#product #info a{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+}
+
+#product #info a i{
+    position: absolute;
+    bottom: 10px;
+    right: 13px;
+
+    
+}
+#product #info a:hover{
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+#footer-banner{
+    background-image: url("img/banner/b14.png");
+    background-color: #041e42;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#footer-banner #footer-b{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 56%;
+    height: 10rem;
+}
+#footer-banner #footer-b h2{
+   color: white;
+}
+#footer-banner #footer-b p{
+    color: rgba(206, 202, 202, 0.708);
+}
+#footer-banner #footer-b span{
+    color: goldenrod;
+}
+#footer-banner #footer-f button{
+    background-color: rgb(16, 120, 101);
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 7px;
+    outline: none;
+}
+#footer-banner #footer-f{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36%;
+    height: 10rem;
+}
+#footer-banner #footer-f input{
+    font-size: 17px;
+    padding: 10px 5px 10px 5px;
+    width: 15rem;
+    border-radius: 7px;
+    outline: none;
+}
+
+.section-p3{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+#section-s{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    padding: 80px 10px 60px 0px;
+    flex-wrap: wrap;
+    column-gap:6rem;
+
+}
+
+#section-1,#section-4{
+    width: 20%;
+}
+#section-2,#section-3{
+    width: 15%;
+}
+#section-4 #apps{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 1.2rem;
+}
+
+#section-4 #apps #apple,#google{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px rgb(220, 214, 214);
+}
+
+#section-4 #apps #apple img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+#section-4 #apps #google img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+
